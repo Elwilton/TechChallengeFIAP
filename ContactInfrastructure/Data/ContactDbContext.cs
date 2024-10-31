@@ -1,5 +1,6 @@
 ﻿using ContactCore.Entity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace ContactInfrastructure.Data;
 
@@ -9,7 +10,12 @@ public class ContactDbContext : DbContext
 
     public ContactDbContext()
     {
-        
+        IConfiguration configuration = new ConfigurationBuilder()
+            .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+            .AddJsonFile("appsettings.json")
+            .Build();
+
+        _connectionString = configuration.GetConnectionString("DefaultConnection");
     }
     public ContactDbContext(string connectionString)
     {
