@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactAPI", "ContactAPI\ContactAPI.csproj", "{4774257C-FDDF-46E1-B983-51264694803F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactAPI", "ContactAPI\ContactAPI.csproj", "{4774257C-FDDF-46E1-B983-51264694803F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactInfrastructure", "ContactInfrastructure\ContactInfrastructure.csproj", "{0BF39618-F3FE-4EC6-A811-1975C96BFF9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactInfrastructure", "ContactInfrastructure\ContactInfrastructure.csproj", "{0BF39618-F3FE-4EC6-A811-1975C96BFF9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactCore", "ContactCore\ContactCore.csproj", "{571C29C3-40C4-4A7F-BDF7-D43A6969A012}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactCore", "ContactCore\ContactCore.csproj", "{571C29C3-40C4-4A7F-BDF7-D43A6969A012}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{2A3F6656-F3A3-4678-AC99-2639D116FF17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagement", "ContactManagement\ContactManagement.csproj", "{0632A19F-4357-4853-86FA-6A8864FDBADB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +31,16 @@ Global
 		{571C29C3-40C4-4A7F-BDF7-D43A6969A012}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{571C29C3-40C4-4A7F-BDF7-D43A6969A012}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{571C29C3-40C4-4A7F-BDF7-D43A6969A012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0632A19F-4357-4853-86FA-6A8864FDBADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0632A19F-4357-4853-86FA-6A8864FDBADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0632A19F-4357-4853-86FA-6A8864FDBADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0632A19F-4357-4853-86FA-6A8864FDBADB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0632A19F-4357-4853-86FA-6A8864FDBADB} = {2A3F6656-F3A3-4678-AC99-2639D116FF17}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16F5D77E-4225-4F1A-8B68-988B06324A01}
